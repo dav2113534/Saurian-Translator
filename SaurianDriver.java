@@ -1,3 +1,4 @@
+
 // This is the driver for the Saurian class
 // Use this website to compare with your translator:
 //  https://saurian.krystalarchive.com/
@@ -5,10 +6,10 @@
 //  https://en.wikipedia.org/wiki/Star_Fox_Adventures
 // http://starfox.wikia.com/wiki/Dino
 
-public class SaurianDriver
-{
-	public static void main(String[] args)
-	{
+import java.util.*;
+
+public class SaurianDriver {
+	public static void main(String[] args) {
 		// create the Saurian object using the default constructor
 		Saurian saur = new Saurian();
 
@@ -25,7 +26,6 @@ public class SaurianDriver
 
 		System.out.println();
 
-
 		// TEST #2
 		// Test the English phrase: "Hello World!"
 		// It should translate to "Xocce Nehct!"
@@ -38,7 +38,6 @@ public class SaurianDriver
 			System.out.println("TEST #2 Failed!");
 
 		System.out.println();
-
 
 		// TEST #3
 		// Test the Saurian word "Faqqu"
@@ -53,7 +52,6 @@ public class SaurianDriver
 
 		System.out.println();
 
-
 		// TEST #4
 		// Test the Saurian phrase: "Kubadw faskihoj aj vid."
 		// It should translate to "Taking pictures is fun."
@@ -67,12 +65,11 @@ public class SaurianDriver
 
 		System.out.println();
 
-
 		// TEST #5
 		// Translate "De edo sud tovouk GENERAL SCALES!"
 		// It should translate to "No one can defeat GENERAL SCALES!"
 		saur.setSaurian("De edo sud tovouk");
-		System.out.println(saur.getEnglish() +  " GENERAL SCALES!");
+		System.out.println(saur.getEnglish() + " GENERAL SCALES!");
 
 		if (saur.getEnglish().equals("No one can defeat"))
 			System.out.println("TEST #5 Passed!");
@@ -98,7 +95,7 @@ public class SaurianDriver
 		// Test the English word "College"
 		// It should translate to "Seccowo"
 		// create the Saurian object and initialize the data
-		Saurian saur2 = new Saurian("College", true);	// true means 1st parameter is in English
+		Saurian saur2 = new Saurian("College", true); // true means 1st parameter is in English
 		System.out.println(saur2.getSaurian());
 
 		if (saur2.getEnglish().equals("College") && saur2.getSaurian().equals("Seccowo"))
@@ -112,7 +109,7 @@ public class SaurianDriver
 		// Test the Saurian word "Faqqu"
 		// It should translate to "Pizza"
 		// create the Saurian object and initialize the data
-		Saurian saur3 = new Saurian("Faqqu", false);	// false means 1st parameter is in Saurian
+		Saurian saur3 = new Saurian("Faqqu", false); // false means 1st parameter is in Saurian
 		System.out.println(saur3.getEnglish());
 
 		if (saur3.getEnglish().equals("Pizza") && saur3.getSaurian().equals("Faqqu"))
@@ -126,7 +123,7 @@ public class SaurianDriver
 		// Test the English word "Hello World!"
 		// It should translate to "Xocce Nehct!"
 		// create the Saurian object and initialize the data
-		Saurian saur4 = new Saurian("Hello World!", true);	// true means 1st parameter is in English
+		Saurian saur4 = new Saurian("Hello World!", true); // true means 1st parameter is in English
 		System.out.println(saur4.getSaurian());
 
 		if (saur4.getEnglish().equals("Hello World!") && saur4.getSaurian().equals("Xocce Nehct!"))
@@ -140,10 +137,11 @@ public class SaurianDriver
 		// Test the Saurian word "Kubadw faskihoj aj vid."
 		// It should translate to "Taking pictures is fun."
 		// create the Saurian object and initialize the data
-		Saurian saur5 = new Saurian("Kubadw faskihoj aj vid.", false);	// false means 1st parameter is in Saurian
+		Saurian saur5 = new Saurian("Kubadw faskihoj aj vid.", false); // false means 1st parameter is in Saurian
 		System.out.println(saur5.getEnglish());
 
-		if (saur5.getEnglish().equals("Taking pictures is fun.") && saur5.getSaurian().equals("Kubadw faskihoj aj vid."))
+		if (saur5.getEnglish().equals("Taking pictures is fun.")
+				&& saur5.getSaurian().equals("Kubadw faskihoj aj vid."))
 			System.out.println("TEST #10 Passed!");
 		else
 			System.out.println("TEST #10 Failed!");
