@@ -37,7 +37,7 @@ public class Saurian {
 	public static final int ARRLENGTH = ENGLISHARR.length; // should be the same length for ENGLISHARR and SAURIANARR
 
 	public Saurian() {
-
+		engForm = "hello";
 	}
 
 }
