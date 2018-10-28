@@ -38,6 +38,11 @@ public class Saurian {
 
 	public Saurian() {
 		engForm = "hello";
+		saurForm = "hello";
+	}
+
+	public setEnglilsh(String phrase, boolean engOrSaur){
+		
 	}
 
 }
