@@ -27,7 +27,13 @@ public class Saurian {
 	}
 
 	public setEnglilsh(String phrase, boolean engOrSaur){
+		engForm = phrase; 
+		// this will be a for loop that checks the
+		for(int i = 0; i< engForm.length; i++){
+			//if(engForm ==  )
+		}
 		
+
 	}
 
 }
