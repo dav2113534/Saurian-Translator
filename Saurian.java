@@ -4,6 +4,7 @@
 // The Saurian class has the ability to translate English to Saurian
 //  and Saurian to English
 
+// Need to figure out the way I'm going to translate a word 
 import java.util.*;
 
 public class Saurian {
