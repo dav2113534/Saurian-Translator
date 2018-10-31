@@ -1,16 +1,12 @@
-
 // Programmer:
 // Date:
 // The Saurian class has the ability to translate English to Saurian
 //  and Saurian to English
 
-// Need to figure out the way I'm going to translate a word 
-import java.util.*;
-
 public class Saurian {
 	// data
-	private String engForm;
-	private String saurForm;
+	private String eng;
+	private String saur;
 
 	// constants used for translating
 	// note M = M and m = m so M and m are not needed
@@ -23,18 +19,8 @@ public class Saurian {
 	public static final int ARRLENGTH = ENGLISHARR.length; // should be the same length for ENGLISHARR and SAURIANARR
 
 	public Saurian() {
-		engForm = "hello";
-		saurForm = "hello";
-	}
-
-	public setEnglilsh(String phrase, boolean engOrSaur){
-		engForm = phrase; 
-		// this will be a for loop that checks the
-		for(int i = 0; i< engForm.length; i++){
-			//if(engForm ==  )
-		}
-		
-
+		eng = "A";
+		saur = "U";
 	}
 
 }
