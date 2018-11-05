@@ -49,4 +49,17 @@ public class Saurian {
 		this.english = english;
 		translateSaurToEng(english);
 	}
+
+	public void translateEngToSaur(String englishToSaur) {
+		saurian = "";
+
+		for (int i = 0; i < englishToSaur.length; i++) {
+			for (int j = 0; j < ENGLISHARR.length; j++) {
+				if (englishToSaur.substring(j, j + 1).equals(ENGLISHARR[j])) {
+					saurian += SAURIANARR;
+					continue;
+				}
+			}
+		}
+	}
 }
