@@ -45,4 +45,8 @@ public class Saurian {
 		translateSaurToEng(saurian);
 	}
 
+	public void translateEngToSaur(string english) {
+		this.english = english;
+		translateSaurToEng(english);
+	}
 }
