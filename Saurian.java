@@ -62,4 +62,16 @@ public class Saurian {
 			}
 		}
 	}
+
+	public void translateSaurToEng(String saurian) {
+		english = "";
+		for (int i = 0; i < saurToEnglish.length; i++) {
+			for (int j = 0; j < SAURIANARR.length; j++) {
+				if (saurianToEnglish.substring(j, j + 1).equal(ENGLISHARR[j])) {
+					english += ENGLISHARR[j];
+					continue;
+				}
+			}
+		}
+	}
 }
