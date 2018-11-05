@@ -1,12 +1,12 @@
-// Programmer:
+// Programmer: David Palacios 
 // Date:
 // The Saurian class has the ability to translate English to Saurian
 //  and Saurian to English
 
 public class Saurian {
 	// data
-	private String eng;
-	private String saur;
+	private String english;
+	private String saurian;
 
 	// constants used for translating
 	// note M = M and m = m so M and m are not needed
@@ -19,8 +19,30 @@ public class Saurian {
 	public static final int ARRLENGTH = ENGLISHARR.length; // should be the same length for ENGLISHARR and SAURIANARR
 
 	public Saurian() {
-		eng = "A";
-		saur = "U";
+		english = "A";
+		saurian = "U";
+	}
+
+	public Saurian(String phrase, boolean engOrSaur) {
+
+	}
+
+	public getEnglish(){
+		return english;
+	}
+
+	public getSaurian(){
+		return saurian; 
+	}
+
+	public void setEnglish(String english) {
+		this.english = english;
+		translateEngToSaur(english);
+	}
+
+	public void setSaurian(String saurian) {
+		this.saurian = saurian;
+		translateSaurToEng(saurian);
 	}
 
 }
