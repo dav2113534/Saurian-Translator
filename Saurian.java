@@ -21,6 +21,7 @@ public class Saurian {
 			'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'i', 'l', 'n', 'p', 'o', 'q' };
 	public static final int ARRLENGTH = ENGLISHARR.length; // should be the same length for ENGLISHARR and SAURIANARR
 
+	// Default constructer
 	public Saurian() {
 		english = "A";
 		saurian = "U";
@@ -30,6 +31,7 @@ public class Saurian {
 
 	}
 
+	// getter methods below
 	public String getEnglish() {
 		return english;
 	}
@@ -38,6 +40,7 @@ public class Saurian {
 		return saurian;
 	}
 
+	// Setter methods below
 	public void setEnglish(String english) {
 		this.english = english;
 		translateEngToSaur(english);
@@ -48,11 +51,7 @@ public class Saurian {
 		translateSaurToEng(saurian);
 	}
 
-	// public void setEnglish(String english) {
-	// this.english = english;
-	// translateSaurToEng(english);
-	// }
-
+	// Translator methods below
 	public void translateEngToSaur(String englishToSaur) {
 		saurian = "";
 
