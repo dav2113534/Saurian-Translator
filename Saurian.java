@@ -51,7 +51,7 @@ public class Saurian {
 		translateSaurToEng(saurian);
 	}
 
-	// Translator methods below
+	// Translator methods
 	public void translateEngToSaur(String englishToSaur) {
 		saurian = "";
 
@@ -65,7 +65,7 @@ public class Saurian {
 		}
 	}
 
-	public void translateSaurToEng(String saurian) {
+	public void translateSaurToEng(String saurToEnglish) {
 		english = "";
 		for (int i = 0; i < saurToEnglish.length; i++) {
 			for (int j = 0; j < SAURIANARR.length; j++) {
