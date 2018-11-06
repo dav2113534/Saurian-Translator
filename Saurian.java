@@ -1,7 +1,10 @@
+
 // Programmer: David Palacios 
 // Date:
 // The Saurian class has the ability to translate English to Saurian
 //  and Saurian to English
+
+import java.util.*;
 
 public class Saurian {
 	// data
