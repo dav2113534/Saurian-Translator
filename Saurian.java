@@ -30,12 +30,12 @@ public class Saurian {
 
 	}
 
-	public getEnglish(){
+	public String getEnglish() {
 		return english;
 	}
 
-	public getSaurian(){
-		return saurian; 
+	public String getSaurian() {
+		return saurian;
 	}
 
 	public void setEnglish(String english) {
@@ -48,10 +48,10 @@ public class Saurian {
 		translateSaurToEng(saurian);
 	}
 
-	public void translateEngToSaur(string english) {
-		this.english = english;
-		translateSaurToEng(english);
-	}
+	// public void setEnglish(String english) {
+	// this.english = english;
+	// translateSaurToEng(english);
+	// }
 
 	public void translateEngToSaur(String englishToSaur) {
 		saurian = "";
